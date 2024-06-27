@@ -16,7 +16,7 @@ int main() {
     // Using the write() function to write to stdout
     ssize_t bytesWritten = write(fileDescriptor, message, size_t);
 
-    // printf("write call returned number: %zd", bytesWritten);
+    printf("write call returned number: %zd", bytesWritten);
 
     // Checking for errors
     // if (bytesWritten == -1) {

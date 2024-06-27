@@ -16,7 +16,7 @@ int main() {
         socklen_t clientAddrLen = sizeof(clientAddr);
         char buffer[BUFFER_SIZE];
 
-        // Create socket
+        // Create server socket
         if ((serverSocket = socket(AF_INET, SOCK_STREAM, 0)) == -1) {
             perror("Socket creation failed");
             exit(EXIT_FAILURE);
